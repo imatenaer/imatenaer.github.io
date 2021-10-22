@@ -1,7 +1,7 @@
 <html>
     <head>
         <script type = "text/javascript">
-            var size = 1
+            var size = 0.1;
             function show_image(src, width, height, alt) {
                 var img = document.createElement("img");
                 img.src = src;
@@ -9,12 +9,13 @@
                 img.height = height * size;
                 img.alt = alt;
                 document.body.appendChild(img);
-                size = size + 1;
+                size = size + 0.1;
             }
         </script>
     </head>
     <body>
         <h>click button</h>
         <input type="button" onclick="show_image('https://api.time.com/wp-content/uploads/2019/11/gettyimages-459761948.jpg?quality=85&w=1024&h=512&crop=1', 200, 100)" value="button" />
+        <br></br>
     </body>
 </html>
