@@ -1,13 +1,15 @@
 <html>
     <head>
         <script type = "text/javascript">
+            var size = 1
             function show_image(src, width, height, alt) {
                 var img = document.createElement("img");
                 img.src = src;
-                img.width = width;
-                img.height = height;
+                img.width = width * size;
+                img.height = height * size;
                 img.alt = alt;
                 document.body.appendChild(img);
+                size = size + 1;
             }
         </script>
     </head>
